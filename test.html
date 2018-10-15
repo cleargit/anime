@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="anime.min.js"></script>
+    <!--<script src="demo.js"></script>-->
+    <script src="shamer.js"></script>
+</head>
+<style>
+    .grid__item {
+        position: relative;
+        width: 180px;
+
+    }
+    .grid__item--c1:hover{
+        color: #52649e;
+    }
+    .stack {
+          position: relative;
+          width: 100%;
+          height: 100%;
+
+      }
+    .stack__deco {
+        position: absolute;
+        background-color: currentColor;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin:50% 100%;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .stack__figure {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 100%;
+    }
+
+</style>
+<body>
+<div class="content">
+<div class="a1">
+    <div  class="grid__item grid__item--c1">
+        <div class="stack">
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco"style="opacity: 0" ></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__figure" style="opacity: 1; transform:translate(0px,0px) translateZ(0px);">
+                <a href="a4.png" class="fancybox fancybox.image" rel="group"><img style="height: 134px;" class="stack__img" src="a4.png" alt="Image"></a>
+            </div>
+        </div>
+        <div class="grid__item-caption">
+            <h3 class="grid__item-title" style="transform: translateZ(30px);">前端性能优化</h3>
+
+        </div>
+    </div>
+</div>
+<div class="a2">
+    <div class="grid__item grid__item--c1">
+        <div class="stack">
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco"style="opacity: 0" ></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__figure" style="opacity: 1; transform:translate(0px,0px) translateZ(0px);">
+                <a href="a4.png" class="fancybox fancybox.image" rel="group"><img style="height: 134px;" class="stack__img" src="a4.png" alt="Image"></a>
+            </div>
+        </div>
+        <div class="grid__item-caption">
+            <h3 class="grid__item-title" style="transform: translateZ(30px);">123</h3>
+
+        </div>
+    </div>
+</div>
+<div class="a3">
+    <div class="grid__item grid__item--c1">
+        <div class="stack">
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco"style="opacity: 0" ></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__deco" style="opacity: 0"></div>
+            <div class="stack__figure" style="opacity: 1; transform:translate(0px,0px) translateZ(0px);">
+                <a href="a4.png" class="fancybox fancybox.image" rel="group"><img style="height: 134px;" class="stack__img" src="https://www.xuanbiyijue.com/images/categories/10.png" alt="Image"></a>
+            </div>
+        </div>
+        <div class="grid__item-caption">
+            <h3 class="grid__item-title" style="transform: translateZ(30px);">123</h3>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    $(".a1 .grid__item").each(function (index,val) {
+
+        new CanopusFx(val);
+    })
+    $(".a2 .grid__item").each(function (index,val) {
+        console.log(val)
+        new open(val);
+    })
+    $(".a3 .grid__item").each(function (index,val) {
+
+        new LOVE(val);
+    })
+</script>
+</html>
